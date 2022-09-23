@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      defer
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <lottie-player
+        src="./loading.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+        class="loading"
+      ></lottie-player>
+      <div class="heading">Word Counter</div>
+      <input type="text" class="input" />
+      <div class="ans">No of character are: <span class="answer"></span></div>
+      <div class="btnContainer">
+        <button class="check" onclick="loader()">Check</button>
+        <button class="reset" onclick="reset()">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="input"></div>
+      <table>
+        <tr>
+          <td>
+            <div onclick="erase()" class="btn" style="background-color: red">
+              AC
+            </div>
+          </td>
+          <td><div onclick="removeOne()" class="btn">C</div></td>
+          <td><div onclick="insert('/')" class="btn">/</div></td>
+          <td><div onclick="insert('*')" class="btn">x</div></td>
+        </tr>
+        <tr>
+          <td>
+            <div onclick="insert('7')" class="btn">7</div>
+          </td>
+          <td><div onclick="insert('8')" class="btn">8</div></td>
+          <td><div onclick="insert('9')" class="btn">9</div></td>
+          <td><div onclick="insert('-')" class="btn">-</div></td>
+        </tr>
+        <tr>
+          <td>
+            <div onclick="insert('4')" class="btn">4</div>
+          </td>
+          <td><div onclick="insert('5')" class="btn">5</div></td>
+          <td><div onclick="insert('6')" class="btn">6</div></td>
+          <td><div onclick="insert('+')" class="btn">+</div></td>
+        </tr>
+        <tr>
+          <td>
+            <div onclick="insert('1')" class="btn">1</div>
+          </td>
+          <td><div onclick="insert('2')" class="btn">2</div></td>
+          <td><div onclick="insert('3')" class="btn">3</div></td>
+          <td rowspan="3">
+            <div onclick="ans()" class="btn" style="height: 100px">=</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div onclick="insert('/')" class="btn">%</div>
+          </td>
+          <td><div onclick="insert('0')" class="btn">0</div></td>
+          <td><div onclick="insert('.')" class="btn">.</div></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
