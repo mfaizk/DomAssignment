@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #e1a2b8, #9f2bc1);
+  flex-direction: column;
+}
+.heading {
+  color: #2827cc;
+  font-size: 3rem;
+  margin-bottom: 100px;
+  font-family: "Girassol", sans-serif;
+}
+.mainContainer {
+  background: linear-gradient(180deg, #db0b5f, #6f00ed);
+  height: 600px;
+  width: 600px;
+}
+.inputContainer {
+  background-color: blue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  height: 50px;
+}
+.input {
+  height: 40px;
+  flex-grow: 1;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.btn {
+  background-color: green;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  box-shadow: 1px 1px 1px #1f1f1f;
+}
+.btn:active {
+  box-shadow: -1px -1px #1f1f1f;
+}
+.listContainer {
+  /* background-color: orange; */
+  height: 480px;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+.listItem {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 1px 1px 5px #6a1b4d;
+  flex-wrap: wrap;
+  height: auto;
+}
+.valueContainer {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+  margin-right: 50px;
+}
+.value {
+  /* background-color: orange; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 10px;
+}
+.cpyBtn {
+  box-shadow: 1px 1px 5px #6a1b4d;
+  padding: 5px 15px;
+  background-color: #6a1b4d;
+  align-self: flex-end;
+}
+.cpyBtn:active {
+  box-shadow: -1px -1px 5px #6a1b4d;
+}
+
+.dltBtn {
+  box-shadow: 1px 1px 5px #b4161b;
+  padding: 5px 15px;
+  background-color: #b4161b;
+  align-self: flex-end;
+}
+.dltBtn:active {
+  box-shadow: -1px -1px 5px #b4161b;
+}
