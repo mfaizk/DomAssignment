@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color-Mixer</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="heading">Option Color</div>
+      <lottie-player
+        src="./assets/loss.json"
+        id="loss"
+        background="transparent"
+        speed="1"
+        style="display: none"
+        loop
+        autoplay
+      ></lottie-player>
+      <lottie-player
+        src="./assets/winner.json"
+        id="win"
+        background="transparent"
+        speed="1"
+        style="display: none"
+        loop
+        autoplay
+      ></lottie-player>
+      <div class="resultantColorContainer">
+        <div class="colorBox" onclick="checkAnswer(this)"></div>
+        <div class="colorBox" onclick="checkAnswer(this)"></div>
+        <div class="colorBox" onclick="checkAnswer(this)"></div>
+        <div class="colorBox" onclick="checkAnswer(this)"></div>
+      </div>
+      <div class="heading">Given Color</div>
+      <div class="primaryColorBox">
+        <div class="pColor"></div>
+        <div class="pColor"></div>
+      </div>
+    </div>
+  </body>
+</html>
